@@ -25,11 +25,11 @@ async def query_handler(bot: Client, query: CallbackQuery):
         )
     elif query.data == "home":
         btn = [[
-            InlineKeyboardButton("About", callback_data="about"),
-            InlineKeyboardButton("Souce Code", callback_data="source")
+            InlineKeyboardButton("🌐About🚀", callback_data="about"),
+            InlineKeyboardButton("🗽Souce Code🗽", callback_data="source")
         ],[
-            InlineKeyboardButton("Close", callback_data="close"),
-            InlineKeyboardButton("Help", callback_data="help")
+            InlineKeyboardButton("💤Close📴", callback_data="close"),
+            InlineKeyboardButton("🌬️Help🌊", callback_data="help")
         ]]
         await query.message.edit_text(
             text=scripts.START_TXT.format(query.from_user.mention, temp_utils.USER_NAME, temp_utils.BOT_NAME),
