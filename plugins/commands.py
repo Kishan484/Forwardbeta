@@ -16,11 +16,11 @@ async def start_message(bot, message):
     else:
         pass
     btn = [[
-            InlineKeyboardButton("About", callback_data="about"),
-            InlineKeyboardButton("Souce Code", callback_data="source")
+            InlineKeyboardButton("🌐ABOUT🚀", callback_data="about"),
+            InlineKeyboardButton("🗽Souce Code🗽", callback_data="source")
         ],[
-            InlineKeyboardButton("Close", callback_data="close"),
-            InlineKeyboardButton("Help", callback_data="help")
+            InlineKeyboardButton("💤Close📴", callback_data="close"),
+            InlineKeyboardButton("🌬️Help🌊", callback_data="help")
         ]]
     await message.reply_text(
         text=scripts.START_TXT.format(message.from_user.mention, temp_utils.USER_NAME, temp_utils.BOT_NAME),
